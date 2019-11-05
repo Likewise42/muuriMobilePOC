@@ -1,0 +1,37 @@
+<out-of-scope version="R1" feature="2- and 3-column grid items" explanation="'This page demonstrates issues in projected future functionality so that interested stakeholders can be aware of issues in the selected grid layout software.'">
+    <div class="colSpanDemo">
+        <muuri-grid can-edit="true">
+            <demo-data></demo-data>
+        </muuri-grid>
+        <div class="instructions">
+            <h3>These are instructions how to create potentially problematic Muuri interactions</h3>
+            <h5>First Problem</h5>
+            <ol>
+                <li>Drag Tile 2 slowly to left over tile 1</li>
+                <li>Drop Tile 2 to the left of tile 1 on the top row</li>
+                <li>Begin to Drag Tile 2 again</li> 
+                <li>Drag it above the grid, and around to these directions</li>
+                <li>Slowly Drag it from right to left over Tile 1 again back to where it started</li>
+            </ol>
+            <h5>Second Problem</h5>
+            <ol>
+                <li>Drag Tile 3 onto the area of tile 6 or tile 7</li>
+                <li>The tiles 4, 5, and 6 will shift over to the left.</li>
+                <ul>
+                    <li>The tiles will not interact or change at all until you move over tile 4 or above tile 5</li>
+                    <li>You can not place a large tile below two small tiles if there is a two column tile below it</li>
+                </ul>
+            </ol>
+            <h5>Third Problem</h5>
+            <ol>
+                <li>Drag Tile 11 down to the left side of Tile 12</li>
+                <li>Slowly Drag straight down</li>
+            </ol>
+            <h5>Fourth Problem</h5>
+            <ol>
+                <li>Drag Tile 9 slowly upwards over Tile 7</li>
+                <li>Drag Tile 9 back slowly downward over Tile 7 back to its original spot</li>
+            </ol>
+        </div>
+    </div>
+</out-of-scope>

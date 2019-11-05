@@ -1,0 +1,11 @@
+<div class="outOfScope">
+    <h2>Out of scope features</h2>
+    <div class="outOfScope__message">
+        {{$ctrl.feature}} are out of scope for <strong>Customizable Dashboard {{$ctrl.version}}</strong>.
+    </div>
+    <div class="outOfScope__message --additional" ng-if="$ctrl.explanation" ng-bind="$ctrl.explanation"></div>
+    <button class="outOfScope__button" ng-hide="$ctrl.accepted" ng-click="$ctrl.accepted = true">
+        Display Out Of Scope Content
+    </button>
+    <div class="outOfScope__content" ng-if="$ctrl.accepted" ng-transclude></div>
+</div>

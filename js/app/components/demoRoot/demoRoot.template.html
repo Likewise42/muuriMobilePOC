@@ -1,0 +1,16 @@
+<div class="page-content">
+    <header class="page-header">
+        <demo-header></demo-header>
+    </header>
+    <nav>
+        <a href="#" ng-click="$ctrl.togglePercentUnload()" class="toggleable" ng-class="{selected: $ctrl.unload}">Load 70% of Tiles</a>
+        <a href="#" ng-click="$ctrl.toggleStaggerLoad()" class="toggleable" ng-class="{selected: $ctrl.stagger}">Stagger Tile Load</a>
+        <a href="#" ng-click="$ctrl.reloadView()" title="Reload current demo" ng-disabled="$ctrl.currentState.name === loadingDemo">
+            <span class="rot-90">&#x21bb;</span>
+            Reload current demo
+        </a>
+    </nav>
+    <main ng-include="$ctrl.currentState.templateUrl">
+    </main>
+    <bulldozer></bulldozer>
+</div>
